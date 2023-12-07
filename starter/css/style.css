@@ -20,27 +20,27 @@ header {
   font-size: 20px;
 }
 
-h1{
+h1 {
   float: left;
   margin-left: 60px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 60px;
 }
 
-nav{
+nav {
   float: right;
   margin-right: 60px;
   padding: 20px;
   display: inline-flex;
 }
 
-li{
-display: inline;
-margin-right: 10px;
-justify-content: space-between;
+li {
+  display: inline;
+  margin-right: 10px;
+  justify-content: space-between;
 }
 
-.hero-banner{
+.hero-banner {
   background-image: url("/Assets/Palmetum\ Santa\ Cruz.JPG");
   background-position: left;
   background-repeat: no-repeat;
@@ -51,18 +51,28 @@ justify-content: space-between;
   width: 100%;
   margin-bottom: 25px;
   overflow: hidden;
-
 }
 
-#about{
- 
+.hero-banner h2 {
+  padding: 20px;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
 }
 
-h2,
+#bio-image{
+  height: 300px;
+}
+
+.page-section h2{
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
 }
-
