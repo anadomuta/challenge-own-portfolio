@@ -41,18 +41,21 @@ justify-content: space-between;
 }
 
 .hero-banner{
-  background-image: url("");
-  background-position: center;
+  background-image: url("/Assets/Palmetum\ Santa\ Cruz.JPG");
+  background-position: left;
+  background-repeat: no-repeat;
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  height: 700px;
+  width: 100%;
+  margin-bottom: 25px;
+  overflow: hidden;
 
 }
 
 #about{
-  background-image: url("/Assets/Personal-photo.JPG");
-  background-size: cover;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 25px;
+ 
 }
 
 h2,
