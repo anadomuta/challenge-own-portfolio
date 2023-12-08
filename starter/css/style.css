@@ -52,7 +52,7 @@ li {
 }
 
 .hero-banner {
-  background-image: url("/Assets/la-gomer-image.JPG");
+  background-image: url("/Assets/la-gomera-image.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,10 +63,9 @@ li {
   overflow: hidden;
 }
 
-.hero-banner h2 {
+.hero-banner figcaption{
+  text-align: end;
   padding: 20px;
-  position: relative;
-  margin-left: 50px;
   color: white;
   font-size: 20px;
   font-family: cursive;
@@ -94,11 +93,16 @@ li {
   "project4 project5";
 }
 
+.categoryGridArea .heading{
+  background-color:rgba(136, 77, 49, 0.5);
+}
+
 .categoryGridArea{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
+  margin-bottom: 25px;
   cursor: pointer;
   display: grid;
   align-content: end;
@@ -107,23 +111,28 @@ li {
 #code-refactor{
   grid-area: code-refactor;
   background-image: url("/Assets/code-refactor.png");
-  background-position: top;
 }
 
 #project2{
   grid-area: project2;
+  background-image: url("/Assets/el-teide-vulcano.jpeg");
+  background-position: 60% 40%;
 }
 
 #project3{
   grid-area: project3;
+  background-image: url("/Assets/sunset-in-tenerife.jpeg");
+  background-position: 25% 75%;
 }
 
 #project4{
   grid-area: project4;
+  background-image: url("/Assets/From\ the\ sky.jpeg");
 }
 
-#project4{
-  grid-area: project4;
+#project5{
+  grid-area: project5;
+  background-image: url("/Assets/ocean.jpeg");
 }
 
 h3,

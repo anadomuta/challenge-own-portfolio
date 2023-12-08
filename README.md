@@ -46,6 +46,7 @@ If you followed tutorials, include links to those here as well.
 The following resources were used:
 1.[W3Schools - CSS Border Types](https://www.w3schools.com/css/css_border.asp)
 2.[Hex Color Codes](https://www.color-hex.com/)
+3.[StackOverflow - Transparent Color Background for grid headings](https://stackoverflow.com/questions/1751263/hex-colors-numeric-representation-for-transparent)
 3.[Personal Websites Examples - Emily Claire](https://www.wix.com/blog/personal-website-examples#viewer-1dim7)
 
 ## License
