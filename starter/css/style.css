@@ -7,6 +7,11 @@
 body {
   background-color: #fff4e6;
   line-height: 1.5;
+  letter-spacing: 0.15em;
+}
+
+#page {
+  padding: 20px;
 }
 
 p {
@@ -14,40 +19,40 @@ p {
 }
 
 header {
-  padding: 20px;
+  padding: 50px;
   background-color: white;
-  overflow: hidden;
   font-size: 20px;
 }
 
 h1 {
-  float: left;
-  margin-left: 60px;
+  text-align: center;
+  padding: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 60px;
+  font-size: 90px;
 }
 
-nav {
-  float: right;
-  margin-right: 60px;
-  padding: 20px;
-  display: inline-flex;
+ul {
+  width: 800px;
+  padding: 15px;
+  margin: 2px auto 2px auto;
+  border-top: 4px solid;
+  border-bottom: 2px solid;
+  text-align: center;
+  font-size: 30px;
 }
 
 li {
-  display: inline;
-  margin-right: 10px;
-  justify-content: space-between;
+  display: inline-flex;
+  margin: 0px 3px;
 }
 
 .hero-banner {
-  background-image: url("/Assets/Palmetum\ Santa\ Cruz.JPG");
-  background-position: left;
+  background-image: url("/Assets/la-gomer-image.JPG");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0px;
   padding: 0px;
-  height: 700px;
+  height: 800px;
   width: 100%;
   margin-bottom: 25px;
   overflow: hidden;
@@ -59,16 +64,16 @@ li {
   color: white;
   font-size: 20px;
   font-family: cursive;
+  margin-left: 50px;
 }
 
-#bio-image{
-  height: 300px;
-}
 
-.page-section h2{
+.page-section h2 {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 50px;
 }
+
 
 h3,
 h4,
