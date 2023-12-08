@@ -106,12 +106,33 @@ li {
 
 #code-refactor{
   grid-area: code-refactor;
+  background-image: url("/Assets/code-refactor.png");
+  background-position: top;
 }
 
+#project2{
+  grid-area: project2;
+}
+
+#project3{
+  grid-area: project3;
+}
+
+#project4{
+  grid-area: project4;
+}
+
+#project4{
+  grid-area: project4;
+}
 
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
+}
+
+footer{
+  text-align: center;
 }
