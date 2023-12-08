@@ -11,11 +11,16 @@ body {
 }
 
 #page {
-  padding: 20px;
+  padding: 100px;
 }
 
 p {
-  margin: 0;
+  margin: 50px;
+}
+
+/*Remove underline from links*/
+a {
+  text-decoration: none;
 }
 
 header {
@@ -61,17 +66,46 @@ li {
 .hero-banner h2 {
   padding: 20px;
   position: relative;
+  margin-left: 50px;
   color: white;
   font-size: 20px;
   font-family: cursive;
-  margin-left: 50px;
 }
 
+.page-wrapper{
+  padding: 0px;
+  background-color: white;
+}
 
 .page-section h2 {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-left: 50px;
+}
+
+#work {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas: 
+  "code-refactor  code-refactor"
+  "project2 project3"
+  "project4 project5";
+}
+
+.categoryGridArea{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#code-refactor{
+  grid-area: code-refactor;
 }
 
 
