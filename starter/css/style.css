@@ -71,8 +71,9 @@ li {
   font-family: cursive;
 }
 
+
 .page-wrapper{
-  padding: 0px;
+  padding: 5px;
   background-color: white;
 }
 
@@ -86,7 +87,7 @@ li {
   margin: 0px 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 500px 300px 300px;
   grid-template-areas: 
   "code-refactor  code-refactor"
   "project2 project3"
@@ -94,7 +95,10 @@ li {
 }
 
 .categoryGridArea .heading{
-  background-color:rgba(136, 77, 49, 0.5);
+  background-color:rgba(190, 155, 123, 0.8);
+  border-bottom: solid;
+  font-size: 30px;
+  padding:3px;
 }
 
 .categoryGridArea{
@@ -111,7 +115,7 @@ li {
 #code-refactor{
   grid-area: code-refactor;
   background-image: url("/Assets/code-refactor.png");
-  
+
 }
 
 #project2{
@@ -136,13 +140,13 @@ li {
   background-image: url("/Assets/ocean.jpeg");
 }
 
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 footer{
   text-align: center;
+}
+
+
+@media only screen and (max-width: 1105px) {
+ul{
+  width: 90%;
+}
 }
