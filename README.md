@@ -1,14 +1,16 @@
 # challenge-own-portfolio
 A landing page for own porfolio
 
-# <Your-Project-Title>
+# Own Portfolio
 
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
 - What was your motivation?
+Create a webpage with all my work
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+This project represents a webpage about myself and the work. 
 - What problem does it solve?
 - What did you learn?
 
@@ -48,6 +50,7 @@ The following resources were used:
 2.[Hex Color Codes](https://www.color-hex.com/)
 3.[StackOverflow - Transparent Color Background for grid headings](https://stackoverflow.com/questions/1751263/hex-colors-numeric-representation-for-transparent)
 3.[Personal Websites Examples - Emily Claire](https://www.wix.com/blog/personal-website-examples#viewer-1dim7)
+4.[W3School:Object-fit property](https://www.w3schools.com/css/css3_object-fit.asp)
 
 ## License
 

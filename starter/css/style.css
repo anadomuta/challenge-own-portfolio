@@ -10,7 +10,7 @@ body {
   letter-spacing: 0.15em;
 }
 
-#page {
+.page {
   padding: 100px;
 }
 
@@ -63,7 +63,7 @@ li {
   overflow: hidden;
 }
 
-.hero-banner figcaption{
+.hero-banner figcaption {
   text-align: end;
   padding: 20px;
   color: white;
@@ -71,8 +71,7 @@ li {
   font-family: cursive;
 }
 
-
-.page-wrapper{
+.page-wrapper {
   padding: 5px;
   background-color: white;
 }
@@ -83,25 +82,36 @@ li {
   margin-left: 50px;
 }
 
+img {
+  height: auto;
+  max-width: 30%;
+  object-fit: contain;
+  margin-left: 50px;
+}
+
+#about-paragraph {
+  float: right;
+}
+
 #work {
   margin: 0px 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 500px 300px 300px;
-  grid-template-areas: 
-  "code-refactor  code-refactor"
-  "project2 project3"
-  "project4 project5";
+  grid-template-areas:
+    "code-refactor  code-refactor"
+    "project2 project3"
+    "project4 project5";
 }
 
-.categoryGridArea .heading{
-  background-color:rgba(190, 155, 123, 0.8);
+.categoryGridArea .heading {
+  background-color: rgba(190, 155, 123, 0.8);
   border-bottom: solid;
   font-size: 30px;
-  padding:3px;
+  padding: 3px;
 }
 
-.categoryGridArea{
+.categoryGridArea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,41 +122,78 @@ li {
   align-content: end;
 }
 
-#code-refactor{
+#code-refactor {
   grid-area: code-refactor;
   background-image: url("/Assets/code-refactor.png");
 
 }
 
-#project2{
+#project2 {
   grid-area: project2;
   background-image: url("/Assets/el-teide-vulcano.jpeg");
   background-position: 60% 40%;
 }
 
-#project3{
+#project3 {
   grid-area: project3;
   background-image: url("/Assets/sunset-in-tenerife.jpeg");
   background-position: 25% 75%;
 }
 
-#project4{
+#project4 {
   grid-area: project4;
   background-image: url("/Assets/From\ the\ sky.jpeg");
 }
 
-#project5{
+#project5 {
   grid-area: project5;
   background-image: url("/Assets/ocean.jpeg");
 }
 
-footer{
+footer {
   text-align: center;
 }
 
 
 @media only screen and (max-width: 1105px) {
-ul{
-  width: 90%;
+  ul {
+    width: 90%;
+  }
 }
+
+@media only screen and (max-width: 375px) {
+  header {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  ul {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .page {
+    padding: 0px;
+  }
+
+  .hero-banner {
+    height: 200px;
+  }
+
+  .hero-banner figcaption {
+    font-size: 10px;
+  }
+
+  .page-section h2 {
+    font-size: 30px;
+  }
+
+  #about-paragraph {
+    font-size: 15px;
+  }
 }
