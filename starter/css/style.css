@@ -87,12 +87,11 @@ li {
 #bio-img {
   height: auto;
   max-width: 30%;
-  object-fit: contain;
+  object-fit:scale-down;
   margin-left: 50px;
 }
 
 #about-paragraph {
-  float: right;
   font-size: 20px;
 }
 
@@ -100,7 +99,7 @@ li {
   margin: 0px 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 300px 300px;
+  grid-template-rows: 600px 500px 500px;
   grid-template-areas:
     "code-refactor  code-refactor"
     "project2 project3"
@@ -129,56 +128,38 @@ li {
   grid-area: code-refactor;
 }
 
-#whiteboard-img {
-  height: auto;
-  max-width: 100%;
-}
-
 #project2 {
   grid-area: project2;
-}
-
-#vulcano-img {
-  width: 200px;
-  height: 300px;
 }
 
 #project3 {
   grid-area: project3;
 }
 
-#sunset-img {
-  height: auto;
-  max-width: 30%;
-
-}
-
 #project4 {
   grid-area: project4;
-}
-
-#sky-img {
-  height: auto;
-  max-width: 30%;
 }
 
 #project5 {
   grid-area: project5;
 }
 
-#ocean-img {
+#whiteboard-img {
   height: auto;
-  max-width: 30%;
+  width: 100%;
 }
 
-#contact p{
-  font
+#sunset-img, #ocean2-img, #sun-img, #ocean-img {
+  height: auto;
+  max-width: 60%;
+  margin-left: 170px;
 }
+
 footer {
   text-align: center;
 }
 
-footer p{
+footer p {
   font-size: 20px;
 }
 
@@ -191,6 +172,9 @@ footer p{
 @media only screen and (max-width: 375px) {
   header {
     padding: 5px;
+  }
+  .categoryGridArea .heading {
+    font-size: 10px;
   }
 }
 
