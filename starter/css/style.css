@@ -82,7 +82,7 @@ li {
   margin-left: 50px;
 }
 
-img {
+#bio-img {
   height: auto;
   max-width: 30%;
   object-fit: contain;
@@ -124,30 +124,49 @@ img {
 
 #code-refactor {
   grid-area: code-refactor;
-  background-image: url("/Assets/code-refactor.png");
+}
 
+#whiteboard-img{
+  height: auto;
+  max-width: 100%;
 }
 
 #project2 {
   grid-area: project2;
-  background-image: url("/Assets/el-teide-vulcano.jpeg");
-  background-position: 60% 40%;
+}
+
+#vulcano-img {
+  height: ;
+  max-width: 30%;
+
 }
 
 #project3 {
   grid-area: project3;
-  background-image: url("/Assets/sunset-in-tenerife.jpeg");
-  background-position: 25% 75%;
+}
+
+#sunset-img{
+  height: auto;
+  max-width: 30%;
+
 }
 
 #project4 {
   grid-area: project4;
-  background-image: url("/Assets/From\ the\ sky.jpeg");
+}
+
+#sky-img{
+  height: auto;
+  max-width: 30%;
 }
 
 #project5 {
   grid-area: project5;
-  background-image: url("/Assets/ocean.jpeg");
+}
+
+#ocean-img{
+  height: auto;
+  max-width: 30%;
 }
 
 footer {
