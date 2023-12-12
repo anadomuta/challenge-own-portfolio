@@ -194,15 +194,21 @@ footer a {
     font-size: 30px;
   }
 
-#work {
-  font-size: 30px;
-}
+  #work {
+    font-size: 30px;
+  }
 
-#contact {
-  font-size: 30px;
-}
+  #contact {
+    font-size: 30px;
+  }
+
+  .project {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
   .about-paragraph {
     font-size: 15px;
   }
+
 }
