@@ -29,6 +29,8 @@ The screenshot below displays the web page outlook.
 
 The project was built following the instructions from the materials in the Skills Bootcamp in Front-End Web Development by edX.
 
+The pictures used throughout the page are from a personal trip to Tenerife. 
+
 In addition, the following resources were used:
 1. [W3Schools - CSS Border Types](https://www.w3schools.com/css/css_border.asp)
 2. [Hex Color Codes](https://www.color-hex.com/)
