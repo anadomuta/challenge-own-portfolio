@@ -194,9 +194,13 @@ footer a {
     font-size: 30px;
   }
 
-  .page-wrapper h2 {
-    font-size: 30px;
-  }
+#work {
+  font-size: 30px;
+}
+
+#contact {
+  font-size: 30px;
+}
 
   .about-paragraph {
     font-size: 15px;
