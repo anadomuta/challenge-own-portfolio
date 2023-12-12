@@ -166,6 +166,8 @@ footer a {
   .heading {
     font-size: 10px;
   }
+
+
 }
 
 @media only screen and (max-width: 645px) {
@@ -211,4 +213,7 @@ footer a {
     font-size: 15px;
   }
 
+  .row {
+    padding: 5px;
+  }
 }
