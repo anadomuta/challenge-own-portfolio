@@ -116,11 +116,11 @@ h2 {
   margin-right: 50px;
 }
 
-.row {
+.column {
   flex: 0 0 40%;
 }
 
-.row .project {
+.column .project {
   margin-bottom: 15px;
 }
 
@@ -213,7 +213,7 @@ footer a {
     font-size: 15px;
   }
 
-  .row {
+  .column {
     padding: 5px;
   }
 }
