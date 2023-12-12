@@ -14,11 +14,7 @@ body {
   padding: 100px;
 }
 
-p {
-  margin: 50px;
-}
-
-/*Remove underline from links*/
+/* Remove underline from links */
 a {
   text-decoration: none;
 }
@@ -51,6 +47,12 @@ li {
   margin: 0px 3px;
 }
 
+/* Hero banner and page section styling */
+.page-wrapper {
+  padding: 5px;
+  background-color: white;
+}
+
 .hero-banner {
   background-image: url("/Assets/la-gomera-image.JPG");
   background-position: center;
@@ -71,98 +73,85 @@ li {
   font-family: cursive;
 }
 
-.page-wrapper {
-  padding: 5px;
-  background-color: white;
-}
-
-.page-section h2 {
-  margin-bottom: 20px;
+h2 {
+  margin-bottom: 30px;
   margin-top: 20px;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-left: 50px;
 }
 
-#bio-img {
+/* About Me section styling*/
+.about-paragraph,
+.bio-img {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.bio-img {
+  max-width: 40%;
+}
+
+.about-paragraph {
+  font-size: 20px;
+  float: right;
+  clear: none;
+}
+
+/* Work Container styling*/
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  flex: 0 0 30%;
+  margin: 30px 30px;
+}
+
+.project1 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.row {
+  flex: 0 0 40%;
+}
+
+.row .project {
+  margin-bottom: 15px;
+}
+
+#whiteboard-img,
+#sunset-img,
+#ocean2-img,
+#sun-img,
+#ocean-img {
   height: auto;
-  max-width: 30%;
-  object-fit:scale-down;
+  max-width: 100%;
+}
+
+/* Contact Details styling */
+.contact {
   margin-left: 50px;
 }
 
-#about-paragraph {
-  font-size: 20px;
-}
-
-#work {
-  margin: 0px 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 600px 500px 500px;
-  grid-template-areas:
-    "code-refactor  code-refactor"
-    "project2 project3"
-    "project4 project5";
-}
-
-.categoryGridArea .heading {
-  background-color: rgba(190, 155, 123, 0.8);
-  border-bottom: solid;
-  font-size: 30px;
-  padding: 3px;
-}
-
-.categoryGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
-  margin-bottom: 25px;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
-}
-
-#code-refactor {
-  grid-area: code-refactor;
-}
-
-#project2 {
-  grid-area: project2;
-}
-
-#project3 {
-  grid-area: project3;
-}
-
-#project4 {
-  grid-area: project4;
-}
-
-#project5 {
-  grid-area: project5;
-}
-
-#whiteboard-img {
-  height: auto;
-  width: 100%;
-}
-
-#sunset-img, #ocean2-img, #sun-img, #ocean-img {
-  height: auto;
-  max-width: 60%;
-  margin-left: 170px;
-}
-
+/* Footer with copyright details */
 footer {
   text-align: center;
 }
 
 footer p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
+footer a {
+  margin-left: 50px;
+}
+
+/* Media Queries */
 @media only screen and (max-width: 1105px) {
   ul {
     width: 90%;
@@ -173,7 +162,8 @@ footer p {
   header {
     padding: 5px;
   }
-  .categoryGridArea .heading {
+
+  .heading {
     font-size: 10px;
   }
 }
@@ -204,7 +194,7 @@ footer p {
     font-size: 30px;
   }
 
-  #about-paragraph {
+  .about-paragraph {
     font-size: 15px;
   }
 }
