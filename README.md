@@ -5,75 +5,41 @@ A landing page for own porfolio
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project represents a webpage about myself and my work portfolio. It was created to showcase my projects completed throughout the edX Web Development bootcamp and future work sample. 
 
-- What was your motivation?
-Create a webpage with all my work
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-This project represents a webpage about myself and the work. 
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+### Acceptance Criteria for this project were: 
+1. When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you
+2. When one of the links in the navigation is clicked then the UI scrolls to the corresponding section
+3. When viewing the section about your work then the section contains titled images of your applications
+4. When presented with the your first application then that application's image should be larger in size than the others
+5. When images of the applications are clicked then the user is taken to that deployed application
+6. When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The webpage can be accessed using this URL: [to follow]
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+To use the webpage, you can click on the different sections in the navigation bar to get to the desired content section. 
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+The screenshot below displays the web page outlook.
+
+![Webpage Screenshot](./Assets/portfolio-schreenshot.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+The project was built following the instructions from the materials in the Skills Bootcamp in Front-End Web Development by edX.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-The following resources were used:
-1.[W3Schools - CSS Border Types](https://www.w3schools.com/css/css_border.asp)
-2.[Hex Color Codes](https://www.color-hex.com/)
-3.[StackOverflow - Transparent Color Background for grid headings](https://stackoverflow.com/questions/1751263/hex-colors-numeric-representation-for-transparent)
-3.[Personal Websites Examples - Emily Claire](https://www.wix.com/blog/personal-website-examples#viewer-1dim7)
-4.[W3School:Object-fit property](https://www.w3schools.com/css/css3_object-fit.asp)
+In addition, the following resources were used:
+1. [W3Schools - CSS Border Types](https://www.w3schools.com/css/css_border.asp)
+2. [Hex Color Codes](https://www.color-hex.com/)
+4. [Personal Websites Examples - Emily Claire](https://www.wix.com/blog/personal-website-examples#viewer-1dim7)
+5. [W3School:Object-fit property](https://www.w3schools.com/css/css3_object-fit.asp)
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+This project is licensed under the terms of the MIT license.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+![License](https://img.shields.io/github/license/anadomuta/challenge-own-portfolio.svg)
+![VS Code](https://img.shields.io/badge/Made%20with-VSCode-1f425f.svg)
