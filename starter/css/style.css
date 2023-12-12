@@ -54,7 +54,7 @@ li {
 }
 
 .hero-banner {
-  background-image: url("./Assets/la-gomera-image.JPG");
+  background-image: url("Assets/la-gomera-image.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
