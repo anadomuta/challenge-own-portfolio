@@ -117,7 +117,7 @@ h2 {
 }
 
 .column {
-  flex: 0 0 40%;
+  flex: 0 0 50%;
 }
 
 .column .project {
