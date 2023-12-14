@@ -17,7 +17,7 @@ This project represents a webpage about myself and my work portfolio. It was cre
 
 ## Usage
 
-The webpage can be accessed using this URL: [anadomuta.github.io/challenge-own-portfolio/]
+The webpage can be accessed using this URL: https://anadomuta.github.io/challenge-own-portfolio/
 
 To use the webpage, you can click on the different sections in the navigation bar to get to the desired content section. 
 
