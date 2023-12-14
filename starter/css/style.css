@@ -6,8 +6,8 @@
 
 body {
   background-color: #fff4e6;
-  line-height: 1.5;
-  letter-spacing: 0.15em;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
 }
 
 .page {
@@ -81,7 +81,7 @@ h2 {
   margin-left: 50px;
 }
 
-/* About Me section styling*/
+/* About Me section styling */
 .about-paragraph,
 .bio-img {
   margin-left: 50px;
@@ -95,11 +95,10 @@ h2 {
 
 .about-paragraph {
   font-size: 20px;
-  float: right;
   clear: none;
 }
 
-/* Work Container styling*/
+/* Work Container styling */
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -166,8 +165,6 @@ footer a {
   .heading {
     font-size: 10px;
   }
-
-
 }
 
 @media only screen and (max-width: 645px) {
