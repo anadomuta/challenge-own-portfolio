@@ -51,6 +51,10 @@ header {
   display: inline-flex;
   cursor: pointer;}
 
+  li a:hover {
+    background-color: aquamarine;
+  }
+  
 /* Hero banner and page section styling */
 .page-wrapper {
   padding: 5px;
