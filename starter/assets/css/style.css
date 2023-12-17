@@ -10,36 +10,28 @@ body {
   letter-spacing: 0.1em;
 }
 
-.page {
-  padding: 100px;
-}
-
 /* Remove underline from links */
 a {
   text-decoration: none;
 }
 
 header {
-  padding: 50px;
+  padding: 20px;
   background-color: white;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 h1 {
-  text-align: center;
   padding: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 90px;
+  font-size: 50px;
 }
 
 ul {
   width: 800px;
   padding: 15px;
   margin: 2px auto 2px auto;
-  border-top: 4px solid;
-  border-bottom: 2px solid;
-  text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 li {
