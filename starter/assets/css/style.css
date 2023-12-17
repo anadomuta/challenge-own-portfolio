@@ -11,7 +11,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* Remove underline from links */
+/* Remove underline from nav links */
 a {
   text-decoration: none;
 }
@@ -61,7 +61,7 @@ li a:hover {
 /* pPage section styling */
 .page-wrapper {
   padding: 5px;
-  /* background-color: #e9e5dc; */
+  background-color: #e9e5dc;
 }
 
 /* Bio image styling */
@@ -88,9 +88,9 @@ h2 {
   align-items: center;
 }
 
-#about{
+#about, #work {
   margin-right: 20px;
-}
+align-self: flex-start;}
 
 .vertical-border {
   border-left: 5px solid #000; 
@@ -113,6 +113,11 @@ h2 {
   justify-content: center;
 }
 
+.work{
+  display: flex;
+  align-items: center;
+}
+
 .project {
   flex: 0 0 30%;
   margin: 30px 30px;
@@ -123,13 +128,13 @@ h2 {
   margin-right: 50px;
 }
 
-.column {
+/* .column {
   flex: 0 0 40%;
-}
+} */
 
-.column .project {
+/* .column .project {
   margin-bottom: 15px;
-}
+} */
 
 #whiteboard-img,
 #sunset-img,
@@ -159,6 +164,12 @@ footer a {
 }
 
 /* Media Queries */
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: 1105px) {
   ul {
     width: 90%;
