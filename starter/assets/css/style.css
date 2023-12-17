@@ -24,27 +24,17 @@ header {
 .navBar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #e9e5dc;
 }
 
 .navBar h1 {
-  width: 25%;
-  font-weight: 500;
-  padding: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 50px;
-}
-
-#navigation {
-  display: flex;
-  width: 50%;
-  align-items: center;
-  float: right;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 50px;
+  margin-top: 15px;
 }
 
 .navBar ul {
-  padding: 15px;
   font-size: 20px;
 }
 
@@ -58,24 +48,32 @@ li a:hover {
   background-color: #be9b7b;
 }
 
-/* pPage section styling */
+/* Page section styling */
 .page-wrapper {
-  padding: 5px;
   background-color: #e9e5dc;
 }
 
 /* Bio image styling */
 .bio-image {
-  margin-top: 50px;
+  background-color: #e9e5dc;
+}
+
+#bio-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
+}
+
+#welcome {
+  text-align: center;
+  margin-top: 0%;
+  padding: 30px;
+  margin-left: 0px;
 }
 
 /* Section heading styling */
 h2 {
-  margin-bottom: 30px;
   margin-top: 20px;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -86,6 +84,7 @@ h2 {
 .about {
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 #about,
@@ -103,9 +102,7 @@ h2 {
 }
 
 .about-paragraph {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 20px;
+  padding: 50px;
   font-size: 20px;
   clear: none;
 }
@@ -115,6 +112,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+figcaption {
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .work {
@@ -132,14 +134,6 @@ h2 {
   margin-right: 50px;
 }
 
-/* .column {
-  flex: 0 0 40%;
-} */
-
-/* .column .project {
-  margin-bottom: 15px;
-} */
-
 #whiteboard-img,
 #sunset-img,
 #ocean2-img,
@@ -147,13 +141,18 @@ h2 {
 #ocean-img {
   height: auto;
   max-width: 100%;
+  opacity: 1;
 }
 
-/* Contact Details styling */
-/* .contact {
-  margin-left: 50px;
-} */
+#whiteboard-img:hover,
+#sunset-img:hover,
+#ocean2-img:hover,
+#sun-img:hover,
+#ocean-img:hover {
+  opacity: 0.5;
+}
 
+/* Contact me section styling */
 .contact {
   display: flex;
   align-items: center;
@@ -162,17 +161,22 @@ h2 {
 .contact p {
   margin-left: 50px;
   font-size: 20px;
-  clear: none;
 }
 
-a{
+a {
   margin: 40px 10px;
   display: inline-flex;
   cursor: pointer;
 }
+
+a:hover {
+  background-color: #be9b7b;
+}
+
 /* Footer with copyright details */
 footer {
   text-align: center;
+  background-color: #e9e5dc;
 }
 
 footer p {
