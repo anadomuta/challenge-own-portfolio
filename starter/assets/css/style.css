@@ -25,8 +25,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#e9e5dc ;
+  background-color: #e9e5dc;
 }
+
 .navBar h1 {
   width: 25%;
   font-weight: 500;
@@ -39,7 +40,8 @@ header {
   display: flex;
   width: 50%;
   align-items: center;
-  float:right;}
+  float: right;
+}
 
 .navBar ul {
   padding: 15px;
@@ -52,37 +54,26 @@ header {
   cursor: pointer;
 }
 
-  li a:hover {
-    background-color: #be9b7b
-    ;
-  }
+li a:hover {
+  background-color: #be9b7b;
+}
 
-/* Hero banner and page section styling */
+/* pPage section styling */
 .page-wrapper {
   padding: 5px;
-  background-color: #e9e5dc;
+  /* background-color: #e9e5dc; */
 }
 
-.hero-banner {
-background-color: ;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  overflow: hidden;
+/* Bio image styling */
+.bio-image {
+  margin-top: 50px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.hero-banner figcaption {
-  text-align: end;
-  padding: 20px;
-  color: white;
-  font-size: 20px;
-  font-family: cursive;
-}
-
+/* Section heading styling */
 h2 {
   margin-bottom: 30px;
   margin-top: 20px;
@@ -91,19 +82,26 @@ h2 {
   margin-left: 50px;
 }
 
-/* About Me section styling */
-.about-paragraph,
-.bio-img {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 20px;
+/* About Me paragraph styling */
+.about{
+  display: flex;
+  align-items: center;
 }
 
-.bio-img {
-  max-width: 40%;
+#about{
+  margin-right: 20px;
+}
+
+.vertical-border {
+  border-left: 5px solid #000; 
+  height: 100%;
+  margin-left: 20px; 
 }
 
 .about-paragraph {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
   font-size: 20px;
   clear: none;
 }
