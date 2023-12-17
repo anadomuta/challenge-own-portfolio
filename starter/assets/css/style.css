@@ -1,11 +1,12 @@
+/* Universal CSS styling*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Typography styling for the page*/
 body {
-  background-color: #fff4e6;
   line-height: 1.6;
   letter-spacing: 0.1em;
 }
@@ -16,28 +17,39 @@ a {
 }
 
 header {
-  padding: 20px;
-  background-color: white;
   font-size: 10px;
+  padding: 10px;
 }
 
-h1 {
+/* Navigation bar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBar h1 {
+  width: 25%;
+  font-weight: 500;
   padding: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 50px;
 }
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  float:right;
+}
 
-ul {
-  width: 800px;
+.navBar ul {
   padding: 15px;
-  margin: 2px auto 2px auto;
   font-size: 20px;
 }
 
-li {
+.navBar li {
+  margin: 5px 10px;
   display: inline-flex;
-  margin: 0px 3px;
-}
+  cursor: pointer;}
 
 /* Hero banner and page section styling */
 .page-wrapper {
