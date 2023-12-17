@@ -66,7 +66,7 @@ li a:hover {
 
 /* Bio image styling */
 .bio-image {
-  margin-top: 50px; 
+  margin-top: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -83,19 +83,23 @@ h2 {
 }
 
 /* About Me paragraph styling */
-.about{
+.about {
   display: flex;
   align-items: center;
 }
 
-#about, #work {
-  margin-right: 20px;
-align-self: flex-start;}
+#about,
+#work,
+#contact {
+  margin-right: 80px;
+  align-self: flex-start;
+  width: 120px;
+}
 
 .vertical-border {
-  border-left: 5px solid #000; 
+  border-left: 5px solid #000;
   height: 100%;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .about-paragraph {
@@ -113,7 +117,7 @@ align-self: flex-start;}
   justify-content: center;
 }
 
-.work{
+.work {
   display: flex;
   align-items: center;
 }
@@ -146,10 +150,26 @@ align-self: flex-start;}
 }
 
 /* Contact Details styling */
-.contact {
+/* .contact {
   margin-left: 50px;
+} */
+
+.contact {
+  display: flex;
+  align-items: center;
 }
 
+.contact p {
+  margin-left: 50px;
+  font-size: 20px;
+  clear: none;
+}
+
+a{
+  margin: 40px 10px;
+  display: inline-flex;
+  cursor: pointer;
+}
 /* Footer with copyright details */
 footer {
   text-align: center;
