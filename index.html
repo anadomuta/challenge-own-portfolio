@@ -29,83 +29,68 @@
   </header>
 
   <!-- Banner -->
-  <section class="bio-image">
-    <h2 id="welcome">Welcome to my portfolio!</h2>
+  <section class="hero-image">
+    <!-- <h2 id="welcome">Welcome to my portfolio!</h2> -->
     <img id="bio-image" src="./starter/assets/images/bio-img-no-background.PNG" alt="Bio image" />
   </section>
 
   <!--Main Content-->
   <main class="page-wrapper">
     <!-- About Me -->
-    <section class="about">
-      <h2 id="about">About Me</h2>
-      <article class="vertical-border">
-        <p class="about-paragraph"> Hi! My name is Ana and I'm currently learning frontend Web Development. My favorite learning topic is UX design. Having worked in Customer Success and Account Management, I have learnt to better understand users and develop features that satisfy their needs.</br></br> I have an educational background in Business Administration, where I have focused on Strategic Management, Organization and Personnel, and Electronic Business.</br></br> In my free time, I enjoy going for a walk while having a coffee. 
-      </p>
-      </article>
-    </section>
 
-    <!-- Work -->
-    <section class="work">
-      <h2 id="work">Work</h2>
-      <article class="vertical-border">
-        <!-- First project -->
-        <div class="content">
-          <div class="project1">
-            <figure>
-              <a href="https://anadomuta.github.io/challenge-horiseon-accessibility/" target="_blank"><img
-                  id="whiteboard-img" src="./starter/assets/images/code-refactor.PNG"
-                  alt="Whiteboard with changes made"></a>
-              <figcaption>Code Refactor</figcaption>
-            </figure>
-          </div>
-          <!-- Second project -->
-          <!-- <div class="column"> -->
-          <div class="project">
-            <figure>
-              <a href="#"><img id="ocean2-img" src="./starter/assets/images/ocean2.JPG"
-                  alt="Ocean view from Tenerife"></a>
-              <figcaption>Project 2<i> [Placeholder]</i></figcaption>
-            </figure>
-          </div>
-          <!-- Third project -->
-          <div class="project">
-            <figure>
-              <a href="#"><img id="sunset-img" src="./starter/assets/images/sunset-in-tenerife.PNG"
-                  alt="Sunset in Tenerife"></a>
-              <figcaption>Project 3<i> [Placeholder]</i></figcaption>
-            </figure>
-          </div>
-          <!-- Fourth project -->
-          <div class="project">
-            <figure>
-              <a href="#"><img id="sun-img" src="./starter/assets/images/sunset.PNG"
-                  alt="Sunset viewed from accomodation"></a>
-              <figcaption>Project 4<i> [Placeholder]</i></figcaption>
-            </figure>
-          </div>
-          <!-- Fifth project -->
-          <div class="project">
-            <figure>
-              <a href="#"><img id="ocean-img" src="./starter/assets/images/ocean.PNG"
-                  alt="Ocean view from Santa Cruz de Tenerife"></a>
-              <figcaption>Project 5<i> [Placeholder]</i></figcaption>
-            </figure>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact">
-      <h2 id="contact">Contact Me</h2>
-      <article class="vertical-border">
-        <p class="contact">
-          <a href="https://www.linkedin.com/in/ana-domuta/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/anadomuta" target="_blank">GitHub</a>
-        </p>
-      </article>
-    </section>
+    <table>
+      <tr>
+        <th>About</br> Me</th>
+        <td>
+          <p class="about-paragraph"> Hi! My name is Ana and I'm currently learning frontend Web Development. My favorite learning topic is UX design. Having worked in Customer Success and Account Management, I have learnt to better understand users and develop features that satisfy their needs.</br></br> I have an educational background in Business Administration, where I have focused on Strategic Management, Organization and Personnel, and Electronic Business.</br></br> In my free time, I enjoy going for a walk while having a coffee. </td>
+      </tr>
+      <tr>
+        <th id="empty-row">
+        </th>
+      </tr>
+      <tr>
+        <th>Work</th>
+        <td>
+          <!-- <div class="subHeading">
+            <h3>Work</h3>
+          </div> -->
+          <section id="categoryGrid">
+            <div id="code-refactor" class="categoryGridArea">
+              <div class="heading">Code Refactor</div>
+            </div>
+            <div id="project2" class="categoryGridArea">
+              <div class="heading">Project 2</div>
+            </div>
+            <div id="project3" class="categoryGridArea">
+              <div class="heading">Project 3</div>
+            </div>
+            <div id="project4" class="categoryGridArea">
+              <div class="heading">Project 4</div>
+            </div>
+            <div id="project5" class="categoryGridArea">
+              <div class="heading">Project 5</div>
+            </div>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <th id="empty-row">
+        </th>
+      </tr>
+      <tr>
+        <th>Contact Me</th>
+        <td>
+          <section class="contact">
+            <article>
+              <p class="contact">
+                <a href="https://www.linkedin.com/in/ana-domuta/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/anadomuta" target="_blank">GitHub</a>
+              </p>
+            </article>
+          </section>
+        </td>
+      </tr>
+    </table>
   </main>
 
 </body>

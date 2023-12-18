@@ -5,13 +5,14 @@
   padding: 0;
 }
 
-/* Typography styling for the page*/
+/* Typography styling for page*/
 body {
   line-height: 1.6;
   letter-spacing: 0.1em;
+  background-color: #e9e5dc;
 }
 
-/* Remove underline from nav links */
+/* Remove underline from all links */
 a {
   text-decoration: none;
 }
@@ -24,24 +25,27 @@ header {
 .navBar {
   display: flex;
   justify-content: space-between;
-  background-color: #e9e5dc;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
-.navBar h1 {
+h1 {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-left: 50px;
-  margin-top: 15px;
+  padding: 20px;
 }
 
-.navBar ul {
+ul {
   font-size: 20px;
+  display: inline-flex;
 }
 
-.navBar li {
-  margin: 5px 10px;
+li {
+  margin: 50px 50px;
   display: inline-flex;
   cursor: pointer;
+
 }
 
 li a:hover {
@@ -54,101 +58,132 @@ li a:hover {
 }
 
 /* Bio image styling */
-.bio-image {
-  background-color: #e9e5dc;
+
+.hero-image {
+  background-image: url("/starter/assets/images/hero-banner.JPG");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  border-bottom: 3px solid black;
+  position: relative;
 }
 
 #bio-image {
-  display: block;
+  object-fit: contain;
+  width: 800px;
   margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
-
-#welcome {
-  text-align: center;
-  margin-top: 0%;
-  padding: 30px;
-  margin-left: 0px;
+  margin-bottom: auto;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Section heading styling */
-h2 {
+h2, h3 {
   margin-top: 20px;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-left: 50px;
 }
 
-/* About Me paragraph styling */
-.about {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-#about,
-#work,
-#contact {
-  margin-right: 80px;
-  align-self: flex-start;
-  width: 120px;
-}
-
-.vertical-border {
-  border-left: 5px solid #000;
-  height: 100%;
-  margin-left: 20px;
-}
-
 .about-paragraph {
-  padding: 50px;
+  padding: 20px;
   font-size: 20px;
   clear: none;
 }
 
+th {
+  border-right: 3px solid black;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+  text-align: end;
+  vertical-align: top;
+}
+
+td {
+  height: 50px;
+}
+
+#empty-row{
+  border-right: 3px solid #e9e5dc;
+}
 /* Work Container styling */
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+.subHeading {
+  text-align: center;
+  border-bottom: 3px solid black;
+  width: 300px;
+  margin: 50px auto;
 }
 
-figcaption {
-  font-size: 20px;
-  margin-left: 10px;
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "code-refactor code-refactor"
+  "project2  project3"
+  "project4 project5"
+  ;
 }
 
-.work {
-  display: flex;
-  align-items: center;
+#code-refactor {
+  grid-area: code-refactor;
+  background-image: url("../images/code-refactor.PNG");
+  border: 3px solid #be9b7b;
+
+}
+#project2 {
+  grid-area: project2;
+  background-image: url("../images/ocean.PNG");
+  border: 3px solid #be9b7b;
 }
 
-.project {
-  flex: 0 0 30%;
-  margin: 30px 30px;
+#project3 {
+  grid-area: project3;
+  background-image: url("../images/sunset-in-tenerife.PNG");
+  border: 3px solid #be9b7b;
 }
 
-.project1 {
-  margin-left: 50px;
-  margin-right: 50px;
+#project4 {
+  grid-area: project4;
+  background-image: url("../images/ocean2.JPG");
+  border: 3px solid #be9b7b;
 }
 
-#whiteboard-img,
-#sunset-img,
-#ocean2-img,
-#sun-img,
-#ocean-img {
-  height: auto;
-  max-width: 100%;
-  opacity: 1;
+#project5 {
+  grid-area: project5;
+  background-image: url("../images/sunset.PNG");
+  border: 3px solid #be9b7b;
 }
 
-#whiteboard-img:hover,
-#sunset-img:hover,
-#ocean2-img:hover,
-#sun-img:hover,
-#ocean-img:hover {
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 5px;
+  color: white;
+  font-size: 25px;
+  border: 3px solid #be9b7b;
+}
+
+#code-refactor:hover,
+#project2:hover,
+#project3:hover,
+#project4:hover,
+#project5:hover {
   opacity: 0.5;
 }
 
@@ -156,15 +191,17 @@ figcaption {
 .contact {
   display: flex;
   align-items: center;
+  margin-left: 0;
+  padding-bottom: 20px;
 }
 
 .contact p {
-  margin-left: 50px;
   font-size: 20px;
+  padding: 50px;
 }
 
 a {
-  margin: 40px 10px;
+  margin: 5px 20px;
   display: inline-flex;
   cursor: pointer;
 }
@@ -188,18 +225,6 @@ footer a {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
-  .content {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 1105px) {
-  ul {
-    width: 90%;
-  }
-}
-
 @media only screen and (max-width: 375px) {
   header {
     padding: 5px;
@@ -210,36 +235,62 @@ footer a {
   }
 }
 
-@media only screen and (max-width: 645px) {
+@media (max-width: 695px) {
+  .navBar {
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .navBar {
+    flex-wrap: wrap;
+    flex-basis: calc(33.33% - 20px);
+  }
+
+  .navBar li {
+    margin: 5px;
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+
+  #bio-image {
+    object-fit: contain;
+    width: 600px;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .navBar {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.8em 0;
+  }
+
   h1 {
     font-size: 50px;
-  }
-
-  ul {
-    font-size: 15px;
-    width: 90%;
-  }
-
-  .page {
-    padding: 0px;
   }
 
   .hero-banner {
     height: 200px;
   }
 
-  .hero-banner figcaption {
-    font-size: 10px;
+  .page-wrapper {
+    text-align: left;
+    flex-direction: column;
   }
 
-  .page-section h2 {
-    font-size: 30px;
-  }
-
-  #work {
-    font-size: 30px;
-  }
-
+  #work,
   #contact {
     font-size: 30px;
   }
@@ -251,9 +302,5 @@ footer a {
 
   .about-paragraph {
     font-size: 15px;
-  }
-
-  .column {
-    padding: 5px;
   }
 }
