@@ -12,7 +12,7 @@ If a selector has multiple properties, the above order has been commented. If th
   padding: 0;
 }
 
-/* General styling */
+/* General page styling */
 body {
   line-height: 1.6;
   letter-spacing: 0.1em;
@@ -30,7 +30,6 @@ a {
 a:hover {
   background-color: #be9b7b;
 }
-
 
 /* 
 **********************************
@@ -239,6 +238,7 @@ Media Queries for small and medium screen size
 **************************************************
 */
 @media only screen and (max-width: 768px) {
+
   header {
     display: inline;
     width: 100%;

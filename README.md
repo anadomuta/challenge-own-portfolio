@@ -21,7 +21,9 @@ The webpage can be accessed using this URL: https://anadomuta.github.io/challeng
 
 To use the webpage, you can click on the different sections in the navigation bar and get to the desired content section. 
 
-The screenshot below displays the web page outlook for the different device sizes.
+The webpage is responsive on small and medium screens.
+
+The screenshot below displays the web page outlook for a large device sizes.
 
 ![Large Webpage Screenshot](./starter/assets/images/screenshot-large-screen.PNG)
 
