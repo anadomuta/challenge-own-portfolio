@@ -1,3 +1,10 @@
+/* The CSS elements have been ordered following the structure of the HTML file. Within these sections, related properties have been clustered based on recommendations from https://github.com/necolas/idiomatic-css. The order of properties is: 
+1. Positioning
+2. Display & Box Model
+3. Typography 
+If a selector has multiple properties, the above order has been commented. If the selector's properties fall within the same category or includes one styling element, no comment has been added*/
+
+
 /* Universal CSS styling*/
 * {
   box-sizing: border-box;
@@ -5,33 +12,44 @@
   padding: 0;
 }
 
-/* Typography styling for page*/
+/* General styling */
 body {
   line-height: 1.6;
   letter-spacing: 0.1em;
   background-color: #e9e5dc;
 }
 
-/* Remove underline from all links */
+/* Links styling */
 a {
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
+
 }
 
-/* Navigation bar */
-.navBar {
-  display: flex;
-  justify-content: space-between;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+a:hover {
+  background-color: #be9b7b;
 }
+
+
+/* 
+**********************************
+Navigation bar and header section
+**********************************
+*/
 
 h1 {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 20px;
   background-color: #be9b7b;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 ul {
@@ -46,16 +64,12 @@ li {
 
 }
 
-li a:hover {
-  background-color: #be9b7b;
-}
 
-/* Page section styling */
-.page-wrapper {
-  background-color: #e9e5dc;
-}
-
-/* Bio image styling */
+/* 
+****************************
+Banner section 
+****************************
+*/
 
 .hero-image {
   background-image: url("/starter/assets/images/hero-banner.JPG");
@@ -78,9 +92,16 @@ li a:hover {
   right: 0;
 }
 
+/* 
+****************************
+Main section 
+****************************
+*/
 
 /* Section heading styling */
-.aboutMe h3, .work h3, .contact h3{
+.aboutMe h3,
+.work h3,
+.contact h3 {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-right: 15px;
@@ -88,17 +109,19 @@ li a:hover {
   padding: 20px;
 }
 
-.aboutMe,.work,
-  .contact {
+.aboutMe,
+.work,
+.contact {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   padding: 20px;
 }
 
-.aboutMe h3{
+.aboutMe h3 {
   margin-left: 20px;
 }
 
+/* About me paragraph styling*/
 .about-paragraph {
   padding: 15px;
   margin-left: 5px;
@@ -106,15 +129,15 @@ li a:hover {
   clear: none;
 }
 
-.work h3{
-  margin-left: 20px;
-}
-
 .about-paragraph {
   border-left: 3px solid black;
 }
 
-/* Work Container styling */
+/* Work Container grid styling */
+
+.work h3 {
+  margin-left: 20px;
+}
 
 #categoryGrid {
   padding: 10px;
@@ -186,6 +209,7 @@ li a:hover {
   border: 3px solid #be9b7b;
 }
 
+/* Reducing opacity when hovering */
 #code-refactor:hover,
 #project2:hover,
 #project3:hover,
@@ -194,7 +218,11 @@ li a:hover {
   opacity: 0.5;
 }
 
-/* Contact me section styling */
+/* 
+****************************
+Contact section 
+****************************
+*/
 
 .contact-links {
   border-left: 3px solid black;
@@ -202,24 +230,25 @@ li a:hover {
   padding: 60px;
 }
 
-a:hover {
-  background-color: #be9b7b;
-}
+/* 
+****************************
+Footer section 
+****************************
+*/
 
-/* Footer with copyright details */
 footer {
   text-align: center;
-  background-color: #e9e5dc;
 }
 
 footer p {
   font-size: 15px;
 }
 
-footer a {
-  margin-left: 50px;
-}
-
+/* 
+****************************
+Media Queries 
+****************************
+*/
 
 @media only screen and (max-width: 1053px) {
   .navBar {
@@ -290,96 +319,96 @@ footer a {
 }
 
 
-  @media only screen (min-width: 482px) and (max-width: 768px) {
-    .navBar {
-      text-align: center;
-    }
-
-    nav ul {
-      display: inline-flex;
-    }
-
-    nav li {
-      margin: 0.8em 0;
-    }
-
-    h1 {
-      font-size: 30px;
-    }
-
-    .about-paragraph {
-      font-size: 15px;
-    }
-
-    .page-wrapper {
-      text-align: left;
-      flex-direction: column;
-    }
+@media only screen (min-width: 482px) and (max-width: 768px) {
+  .navBar {
+    text-align: center;
   }
 
-  @media only screen (min-width: 769px) and (max-width: 1025px) {
-    .navBar {
-      text-align: center;
-      flex-direction: column;
-    }
-
-    nav ul {
-      flex-direction: column;
-    }
-
-    nav li {
-      margin: 0.8em 0;
-    }
-
-    h1 {
-      font-size: 30px;
-    }
-
-    .hero-image {
-      height: 500px;
-    }
-
-    #bio-image {
-      object-fit: contain;
-      width: 600px;
-    }
-
-    .about-paragraph {
-      font-size: 15px;
-    }
-
-    .page-wrapper {
-      text-align: left;
-      flex-direction: column;
-    }
-
-    .hero-banner {
-      height: 200px;
-    }
+  nav ul {
+    display: inline-flex;
   }
 
-  @media only screen and (max-width: 1053px) {
-    .navBar {
-      text-align: center;
-      display: block;
-    }
-
-    .navBar ul {
-      text-align: center;
-    }
-
-    .navBar li {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    .categoryGridArea {
-      position: relative;
-      z-index: 1;
-      margin-top: 20px;
-    }
-
-    .about-paragraph {
-      margin-top: 20px;
-    }
+  nav li {
+    margin: 0.8em 0;
   }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .about-paragraph {
+    font-size: 15px;
+  }
+
+  .page-wrapper {
+    text-align: left;
+    flex-direction: column;
+  }
+}
+
+@media only screen (min-width: 769px) and (max-width: 1025px) {
+  .navBar {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.8em 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+
+  #bio-image {
+    object-fit: contain;
+    width: 600px;
+  }
+
+  .about-paragraph {
+    font-size: 15px;
+  }
+
+  .page-wrapper {
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .hero-banner {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1053px) {
+  .navBar {
+    text-align: center;
+    display: block;
+  }
+
+  .navBar ul {
+    text-align: center;
+  }
+
+  .navBar li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .categoryGridArea {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+  }
+
+  .about-paragraph {
+    margin-top: 20px;
+  }
+}
