@@ -21,8 +21,8 @@ body {
 
 /* Links styling */
 a {
-  text-decoration: none;
   margin: 5px;
+  text-decoration: none;
   cursor: pointer;
 
 }
@@ -39,10 +39,10 @@ Navigation bar and header section
 */
 
 h1 {
+    padding: 20px;
+  background-color: #be9b7b;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 20px;
-  background-color: #be9b7b;
 }
 
 .navBar {
@@ -53,17 +53,15 @@ h1 {
 }
 
 ul {
-  font-size: 20px;
   display: inline-flex;
+  font-size: 20px;
 }
 
 li {
   margin: 50px 50px;
   display: inline-flex;
   cursor: pointer;
-
 }
-
 
 /* 
 ****************************
@@ -72,13 +70,13 @@ Banner section
 */
 
 .hero-image {
-  background-image: url("/starter/assets/images/hero-banner.JPG");
+  position: relative;
   background-position: 0px 0px;
+  height: 700px;
+  background-image: url("/starter/assets/images/hero-banner.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
   border-bottom: 3px solid black;
-  position: relative;
 }
 
 #bio-image {
@@ -102,19 +100,19 @@ Main section
 .aboutMe h3,
 .work h3,
 .contact h3 {
+  margin-right: 15px;
+  padding: 10px;
+  text-align: end;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-right: 15px;
-  text-align: end;
-  padding: 20px;
 }
 
 .aboutMe,
 .work,
 .contact {
+  padding: 20px;
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
 }
 
 .aboutMe h3 {
@@ -163,8 +161,8 @@ Main section
   max-height: 100%;
   width: auto;
   height: auto;
-  display: block;
   margin: auto;
+  display: block;
 }
 
 #project2 {
@@ -196,17 +194,17 @@ Main section
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
-  cursor: pointer;
   display: grid;
   align-content: end;
+  cursor: pointer;
 }
 
 .heading {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 5px;
+  border: 3px solid #be9b7b;
   color: white;
   font-size: 25px;
-  border: 3px solid #be9b7b;
 }
 
 /* Reducing opacity when hovering */
@@ -226,8 +224,8 @@ Contact section
 
 .contact-links {
   border-left: 3px solid black;
-  font-size: 20px;
   padding: 60px;
+  font-size: 20px;
 }
 
 /* 
