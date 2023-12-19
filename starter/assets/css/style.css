@@ -251,6 +251,7 @@ Media Queries for small and medium screen size
   .navBar {
     text-align: center;
     display: inline-block;
+    width: 100%;
   }
 
   .navBar ul {
@@ -260,10 +261,6 @@ Media Queries for small and medium screen size
   .navBar li {
     margin-top: 5px;
     margin-bottom: 5px;
-  }
-
-  h1 {
-    font-size: 50px;
   }
 
   .hero-image {
@@ -287,15 +284,17 @@ Media Queries for small and medium screen size
     border: none;
     display: inline-block;
     width: 100%;
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    padding: 10px;
   }
 
   #categoryGrid {
     border: none;
     justify-content: center;
-    margin-left:70px;
-    grid-template-columns: 100vw;
-    grid-template-rows: repeat(5, 125px);
+    margin-left: 50px;
+    grid-template-columns: 90vw;
+    grid-template-rows: repeat(5, 200px);
     grid-template-areas:
       "code-refactor "
       "project2 "
@@ -308,9 +307,10 @@ Media Queries for small and medium screen size
   .work h3,
   .contact h3 {
     border-bottom: 3px solid black;
-    text-align: center;
+    text-align: left;
     display: inline-block;
     width: 100%;
+    margin-left: 50px;
   }
 
   br {
@@ -336,6 +336,7 @@ Media Queries for small and medium screen size
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   header {
     display: inline;
+    width: 100%;
   }
 
   h1 {
@@ -346,6 +347,7 @@ Media Queries for small and medium screen size
   .navBar {
     text-align: center;
     display: inline-block;
+    width: 100%;
   }
 
   .navBar ul {
@@ -355,10 +357,6 @@ Media Queries for small and medium screen size
   .navBar li {
     margin-top: 5px;
     margin-bottom: 5px;
-  }
-
-  h1 {
-    font-size: 50px;
   }
 
   .hero-image {
@@ -382,13 +380,15 @@ Media Queries for small and medium screen size
     border: none;
     display: inline-block;
     width: 100%;
-    margin-left: 30px;
+    margin-left: 40px;
+    padding: 10px;
   }
 
   #categoryGrid {
     border: none;
     display: -ms-inline-grid;
-    width: 100%;
+    justify-content: center;
+    width: 95%;
     margin-left: 40px;
   }
 
@@ -396,9 +396,9 @@ Media Queries for small and medium screen size
   .work h3,
   .contact h3 {
     border-bottom: 3px solid black;
-    text-align: center;
-    display: inline-block;
+    text-align: left;
     width: 100%;
+    margin-left: 50px;
   }
 
   br {
