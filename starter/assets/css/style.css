@@ -100,9 +100,9 @@ Main section
 .aboutMe h3,
 .work h3,
 .contact h3 {
-  margin-right: 15px;
-  padding: 10px;
-  text-align: end;
+  padding-right: 15px;
+  text-align: right;
+  width: 200px;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -115,13 +115,9 @@ Main section
   justify-content: flex-start;
 }
 
-.aboutMe h3 {
-  margin-left: 20px;
-}
-
 /* About me paragraph styling*/
 .about-paragraph {
-  padding: 15px;
+  padding-left: 15px;
   margin-left: 5px;
   font-size: 20px;
   clear: none;
@@ -132,10 +128,6 @@ Main section
 }
 
 /* Work Container grid styling */
-
-.work h3 {
-  margin-left: 20px;
-}
 
 #categoryGrid {
   padding: 10px;
@@ -343,7 +335,7 @@ Media Queries for small and medium screen size
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .  header {
+  header {
     display: inline;
   }
 
