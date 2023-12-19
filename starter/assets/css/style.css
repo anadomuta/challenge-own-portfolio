@@ -39,7 +39,7 @@ Navigation bar and header section
 */
 
 h1 {
-    padding: 20px;
+  padding: 20px;
   background-color: #be9b7b;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -243,15 +243,23 @@ footer p {
 }
 
 /* 
-****************************
-Media Queries 
-****************************
+**************************************************
+Media Queries for small and medium screen size
+**************************************************
 */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  header {
+    display: inline;
+  }
 
-@media only screen and (max-width: 1053px) {
+  h1 {
+    display: inline-block;
+    width: 100%;
+  }
+
   .navBar {
     text-align: center;
-    display: block;
+    display: inline-block;
   }
 
   .navBar ul {
@@ -261,134 +269,92 @@ Media Queries
   .navBar li {
     margin-top: 5px;
     margin-bottom: 5px;
-  }
-
-  .aboutMe,
-  .work,
-  .contact {
-    flex-direction: column;
-  }
-
-  .about-paragraph,
-  .contact-links {
-    border: none;
-  }
-
-  #categoryGrid {
-    border: none;
-  }
-
-  h3 {
-    border-bottom: 3px solid black;
-  }
-}
-
-/* Media Queries */
-@media only screen (min-width: 0px) and (max-width: 481px) {
-
-  header {
-    padding: 5px;
-  }
-
-  .navBar {
-    text-align: center;
-    flex-direction: column;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin: 0.8em 0;
   }
 
   h1 {
     font-size: 50px;
   }
 
-  .about-paragraph {
-    font-size: 15px;
-  }
-
-  .page-wrapper {
-    text-align: left;
-  }
-}
-
-
-@media only screen (min-width: 482px) and (max-width: 768px) {
-  .navBar {
-    text-align: center;
-  }
-
-  nav ul {
-    display: inline-flex;
-  }
-
-  nav li {
-    margin: 0.8em 0;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  .about-paragraph {
-    font-size: 15px;
-  }
-
-  .page-wrapper {
-    text-align: left;
-    flex-direction: column;
-  }
-}
-
-@media only screen (min-width: 769px) and (max-width: 1025px) {
-  .navBar {
-    text-align: center;
-    flex-direction: column;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin: 0.8em 0;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
   .hero-image {
-    height: 500px;
-  }
-
-  #bio-image {
-    object-fit: contain;
-    width: 600px;
+    display: inline-block;
+    width: 100%;
   }
 
   .about-paragraph {
     font-size: 15px;
   }
 
-  .page-wrapper {
-    text-align: left;
+  .aboutMe,
+  .work,
+  .contact {
     flex-direction: column;
+    display: inline;
+    width: 100%;
   }
 
-  .hero-banner {
-    height: 200px;
+  .about-paragraph {
+    border: none;
+    display: inline-block;
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  #categoryGrid {
+    border: none;
+    justify-content: center;
+    margin-left:70px;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(5, 125px);
+    grid-template-areas:
+      "code-refactor "
+      "project2 "
+      "project3 "
+      "project4 "
+      "project5 ";
+  }
+
+  .aboutMe h3,
+  .work h3,
+  .contact h3 {
+    border-bottom: 3px solid black;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  br {
+    display: none;
+  }
+
+  .contact-links {
+    border: none;
+    flex-direction: column;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: center;
+    margin-left: 40px;
   }
 }
 
-@media only screen and (max-width: 1053px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .  header {
+    display: inline;
+  }
+
+  h1 {
+    display: inline-block;
+    width: 100%;
+  }
+
   .navBar {
     text-align: center;
-    display: block;
+    display: inline-block;
   }
 
   .navBar ul {
@@ -400,13 +366,66 @@ Media Queries
     margin-bottom: 5px;
   }
 
-  .categoryGridArea {
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
+  h1 {
+    font-size: 50px;
+  }
+
+  .hero-image {
+    display: inline-block;
+    width: 100%;
   }
 
   .about-paragraph {
-    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .aboutMe,
+  .work,
+  .contact {
+    flex-direction: column;
+    display: inline;
+    width: 100%;
+  }
+
+  .about-paragraph {
+    border: none;
+    display: inline-block;
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  #categoryGrid {
+    border: none;
+    display: -ms-inline-grid;
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  .aboutMe h3,
+  .work h3,
+  .contact h3 {
+    border-bottom: 3px solid black;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  br {
+    display: none;
+  }
+
+  .contact-links {
+    border: none;
+    flex-direction: column;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: center;
+    margin-left: 40px;
   }
 }
