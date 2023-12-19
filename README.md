@@ -19,11 +19,11 @@ This project represents a webpage about myself and my work portfolio. It was cre
 
 The webpage can be accessed using this URL: https://anadomuta.github.io/challenge-own-portfolio/
 
-To use the webpage, you can click on the different sections in the navigation bar to get to the desired content section. 
+To use the webpage, you can click on the different sections in the navigation bar and get to the desired content section. 
 
-The screenshot below displays the web page outlook.
+The screenshot below displays the web page outlook for the different device sizes.
 
-![Webpage Screenshot](./Assets/portfolio-schreenshot.png)
+![Large Webpage Screenshot](./starter/assets/images/screenshot-large-screen.PNG)
 
 ## Credits
 
@@ -34,8 +34,10 @@ The pictures used throughout the page are from a personal trip to Tenerife.
 In addition, the following resources were used:
 1. [W3Schools - CSS Border Types](https://www.w3schools.com/css/css_border.asp)
 2. [Hex Color Codes](https://www.color-hex.com/)
-4. [Personal Websites Examples - Emily Claire](https://www.wix.com/blog/personal-website-examples#viewer-1dim7)
-5. [W3School:Object-fit property](https://www.w3schools.com/css/css3_object-fit.asp)
+3. [Personal Websites Examples - Emily Claire](https://www.wix.com/blog/personal-website-examples#viewer-1dim7)
+4. [W3School:Object-fit property](https://www.w3schools.com/css/css3_object-fit.asp)
+5. [Banner Image](https://unsplash.com/photos/green-leaves-on-white-surface-tgxqpsVG-0A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)
+6. [CSS elements styling order](https://github.com/necolas/idiomatic-css)
 
 ## License
 
