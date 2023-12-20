@@ -100,7 +100,6 @@ Main section
 .contact h3 {
   padding-right: 15px;
   text-align: right;
-  width: 200px;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -108,7 +107,7 @@ Main section
 .aboutMe,
 .work,
 .contact {
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: flex-start;
 }
@@ -117,7 +116,6 @@ Main section
 .about-paragraph {
   padding-left: 15px;
   font-size: 20px;
-  clear: none;
 }
 
 .about-paragraph {
