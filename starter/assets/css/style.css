@@ -94,33 +94,79 @@ Main section
 ****************************
 */
 
+.grid-container{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 300px 950px 200px;
+  grid-template-areas: 
+  "about-left about-paragraph"
+  "work-left work-grid"
+  "contact-left contact-details";
+}
+
+#about-left{
+  grid-area: about-left;
+}
+
+#work-left{
+  grid-area: work-left;
+}
+
+#contact-left{
+  grid-area: contact-left;
+}
+
+#about-paragraph {
+  grid-area: about-paragraph;
+}
+
+#work-grid{
+  grid-area: work-grid;
+}
+
+#contact-details{
+  grid-area: contact-details;
+}
+
+#about-left, #work-left, #contact-left{
+  padding: 10px;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: end;
+}
+
+#about-paragraph {
+  border-left: 3px solid black;
+  font-size: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
 /* Section heading styling */
-.aboutMe h3,
+/* .aboutMe h3,
 .work h3,
 .contact h3 {
-  padding-right: 15px;
   text-align: right;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+} */
 
-.aboutMe,
+/* .aboutMe,
 .work,
 .contact {
-  padding: 50px;
+  padding: 30px;
   display: flex;
   justify-content: flex-start;
-}
+} */
 
 /* About me paragraph styling*/
-.about-paragraph {
+/* .about-paragraph {
   padding-left: 15px;
   font-size: 20px;
-}
+} */
 
-.about-paragraph {
-  border-left: 3px solid black;
-}
+
 
 /* Work Container grid styling */
 
@@ -252,15 +298,32 @@ Media Queries for small and medium screen size
     font-size: 15px;
   }
 
-  .aboutMe,
-  .work,
-  .contact {
+  #about-left,
+  #work-left,
+  #contact-left {
     flex-direction: column;
-    display: inline;
+    display: inline-block;
+    border-bottom: 3px solid black;
+    text-align: center;
   }
 
-  .about-paragraph {
+  #about-paragraph {
     display: inline;
+    border: none;
+  }
+
+  .grid-container {
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 400px 100px 1100px 100px 100px;
+    grid-template-areas: 
+    "about-left"
+    "about-paragraph"
+    "work-left"
+    "work-grid"
+    "contact-left"
+    "contact-details"
+    ;
   }
 
   #categoryGrid {
@@ -276,14 +339,14 @@ Media Queries for small and medium screen size
       "project5 ";
   }
 
-  .aboutMe h3,
+  /* .aboutMe h3,
   .work h3,
   .contact h3 {
     border-bottom: 3px solid black;
     text-align: left;
     display: inline-block;
     width: 50%;
-  }
+  } */
 
   br {
     display: none;
