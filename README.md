@@ -25,7 +25,7 @@ The webpage is responsive on small and medium screens.
 
 The screenshot below displays the web page outlook for a large device sizes.
 
-![Large Webpage Screenshot](./starter/assets/images/screenshot-large-screen.PNG)
+![Large Webpage Screenshot](./images/portfolio-screenshot.PNG)
 
 ## Credits
 
