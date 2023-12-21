@@ -79,7 +79,6 @@ Banner section
 
 #bio-image {
   object-fit: contain;
-  width: 800px;
   margin-left: auto;
   margin-bottom: auto;
   display: block;
@@ -94,26 +93,26 @@ Main section
 ****************************
 */
 
-.grid-container{
+.grid-container {
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 9fr;
-  grid-template-rows: 300px 950px 200px;
-  grid-template-areas: 
-  "about-left about-paragraph"
-  "work-left work-grid"
-  "contact-left contact-details";
+  grid-template-rows: 400px 950px 200px;
+  grid-template-areas:
+    "about-left about-paragraph"
+    "work-left work-grid"
+    "contact-left contact-details";
 }
 
-#about-left{
+#about-left {
   grid-area: about-left;
 }
 
-#work-left{
+#work-left {
   grid-area: work-left;
 }
 
-#contact-left{
+#contact-left {
   grid-area: contact-left;
 }
 
@@ -121,16 +120,18 @@ Main section
   grid-area: about-paragraph;
 }
 
-#work-grid{
+#work-grid {
   grid-area: work-grid;
 }
 
-#contact-details{
+#contact-details {
   grid-area: contact-details;
 }
 
-#about-left, #work-left, #contact-left{
-  padding: 10px;
+#about-left,
+#work-left,
+#contact-left {
+  padding: 5px;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: end;
@@ -142,31 +143,6 @@ Main section
   padding: 30px;
   margin-bottom: 40px;
 }
-
-/* Section heading styling */
-/* .aboutMe h3,
-.work h3,
-.contact h3 {
-  text-align: right;
-  font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} */
-
-/* .aboutMe,
-.work,
-.contact {
-  padding: 30px;
-  display: flex;
-  justify-content: flex-start;
-} */
-
-/* About me paragraph styling*/
-/* .about-paragraph {
-  padding-left: 15px;
-  font-size: 20px;
-} */
-
-
 
 /* Work Container grid styling */
 
@@ -288,6 +264,81 @@ Media Queries for small and medium screen size
 
   .navBar {
     text-align: center;
+    display: inline;
+  }
+
+  ul {
+    border-bottom: 3px solid black;
+  }
+
+  .about-paragraph {
+    font-size: 15px;
+  }
+
+  #about-left,
+  #work-left,
+  #contact-left {
+    flex-direction: column;
+    display: inline-block;
+    border-bottom: 3px solid black;
+    text-align: center;
+  }
+
+  #about-paragraph {
+    display: inline;
+    border: none;
+  }
+
+  .grid-container {
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "about-left"
+      "about-paragraph"
+      "work-left"
+      "work-grid"
+      "contact-left"
+      "contact-details"
+    ;
+  }
+
+  #categoryGrid {
+    border: none;
+    justify-content: center;
+    grid-template-columns: 90vw;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+      "code-refactor "
+      "project2 "
+      "project3 "
+      "project4 "
+      "project5 ";
+  }
+
+  br {
+    display: none;
+  }
+
+  #contact-details {
+    border: none;
+    flex-direction: column;
+    display: inline;
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    border-top: 3px solid black;
+  }
+
+  .navBar {
+    text-align: center;
   }
 
   ul {
@@ -316,13 +367,13 @@ Media Queries for small and medium screen size
     justify-content: center;
     grid-template-columns: auto;
     grid-template-rows: 100px 400px 100px 1100px 100px 100px;
-    grid-template-areas: 
-    "about-left"
-    "about-paragraph"
-    "work-left"
-    "work-grid"
-    "contact-left"
-    "contact-details"
+    grid-template-areas:
+      "about-left"
+      "about-paragraph"
+      "work-left"
+      "work-grid"
+      "contact-left"
+      "contact-details"
     ;
   }
 
@@ -338,15 +389,6 @@ Media Queries for small and medium screen size
       "project4 "
       "project5 ";
   }
-
-  /* .aboutMe h3,
-  .work h3,
-  .contact h3 {
-    border-bottom: 3px solid black;
-    text-align: left;
-    display: inline-block;
-    width: 50%;
-  } */
 
   br {
     display: none;
@@ -364,59 +406,8 @@ Media Queries for small and medium screen size
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  h1 {
-    border-top: 3px solid black;
-  }
-
-  .navBar {
-    text-align: center;
-    display: inline;
-  }
-
-  ul {
-    border-bottom: 3px solid black;
-  }
-
-  .about-paragraph {
-    border: none;
-    text-align: justify;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-left: 0;
-  }
-
-  .aboutMe,
-  .work,
-  .contact {
-    padding: 20px;
-    flex-direction: column;
-  }
-
-  #categoryGrid {
-    border: none;
-    display: -ms-inline-grid;
-    justify-content: center;
-  }
-
-  .aboutMe h3,
-  .work h3,
-  .contact h3 {
-    border-bottom: 3px solid black;
-    text-align: left;
-    }
-
+@media only screen and (max-width: 1081px) {
   br {
     display: none;
-  }
-
-  .contact-links {
-    border: none;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  footer p {
-    text-align: center;
   }
 }
