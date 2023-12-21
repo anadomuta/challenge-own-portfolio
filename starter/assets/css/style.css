@@ -256,6 +256,13 @@ footer p {
 Media Queries for small and medium screen size
 **************************************************
 */
+
+@media only screen and (max-width: 645px) {
+  #about-paragraph{
+   margin-bottom: 10px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   h1 {
@@ -289,23 +296,10 @@ Media Queries for small and medium screen size
     border: none;
   }
 
-  .grid-container {
-    justify-content: center;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "about-left"
-      "about-paragraph"
-      "work-left"
-      "work-grid"
-      "contact-left"
-      "contact-details"
-    ;
-  }
-
   #categoryGrid {
     border: none;
     justify-content: center;
+    margin-bottom: 30px;
     grid-template-columns: 90vw;
     grid-template-rows: repeat(5, 200px);
     grid-template-areas:
@@ -382,7 +376,7 @@ Media Queries for small and medium screen size
   .grid-container {
     justify-content: center;
     grid-template-columns: auto;
-    grid-template-rows: 100px 400px 100px 1100px 100px 100px;
+    grid-template-rows: auto;
     grid-template-areas:
       "about-left"
       "about-paragraph"
