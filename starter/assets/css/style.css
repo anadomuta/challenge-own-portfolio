@@ -339,6 +339,7 @@ Media Queries for small and medium screen size
 
   .navBar {
     text-align: center;
+    display: inline;
   }
 
   ul {
